@@ -7,12 +7,18 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  display: block;
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -20,6 +26,11 @@
 .header__square-pic {
   height: 568px;
   width: 568px;
+  z-index: 0;
+  position: absolute;
+  top: 64px;
+  right: 0px;
+  background-color: #2f80ed;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -28,4 +39,78 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.logo {
+
+}
+
+.logo_place_header {
+  margin: 0;
+  width: 228px;
+  height: 32px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  margin: 0;
+  width: 730px;
+  margin-left: 64px;
+  font-size: 102px;
+  line-height: 96px;
+  z-index: 2;
+  font-weight: bold;
+}
+
+.header__title-subtitle {
+  margin: 0;
+  position: absolute;
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+  font-weight: normal;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.header__link {
+  color:  #2f80ed;
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  margin: 0;
+  z-index: 1;
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+
+}
+
+.two-columns {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid red;
+  width: 80%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.two-columns__brief {
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  color
+
 }
