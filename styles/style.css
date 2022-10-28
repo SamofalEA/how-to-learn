@@ -1,3 +1,21 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.link {
+  text-decoration: none;
+  transition: opacity 2s ease;
+}
+
+.link:hover {
+  opacity: 60%;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -31,6 +49,11 @@
   top: 64px;
   right: 0px;
   background-color: #2f80ed;
+}
+
+.rotation {
+  transform: rotate(-15deg);
+  animation: rotation 20s linear infinite;
 }
 
 .logo_place_header {
@@ -79,20 +102,19 @@
   right: 0;
   bottom: 0;
 }
-/* СЕКЦИЯ DESCRIPTION ГЛАВНЫЕ ПРОБЛЕМЫ В ОБУЧЕНИИ ------------------------------------------------------------*/
+/* СЕКЦИЯ DESCRIPTION ------------------------------------------------------------------------*/
 .description {
   display: flex;
   justify-content: center;
-
+  margin: 100px auto;
 }
 
 .two-columns {
-  margin: 0;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin-top: 100px;
-  margin-bottom: 100px;
+
 }
 
 .two-columns__main-text {
@@ -131,11 +153,68 @@
 .two-columns__paragraph:last-child {
   margin-bottom: 0px;
 }  
+/* СЕКЦИЯ techniques ТЕХНИКИ ОБУЧЕНИЯ ------------------------------------------------------------------------*/
+.techniques {
+  padding: 0;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  width: 920px;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cards__item {
+  padding: 0;
+  margin: 0 100px 0 0;
+  width: 240px;
+}
+
+.cards__item:nth-child(3n){
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  padding: 0;
+  height: 160px;
+  margin-right: 40px;
+  margin-top: 60px;
+  margin-left: 40px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  margin-top: 43px;
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cards__description {
+  padding: 0;
+  width: 240px;
+  text-align: center;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
 /* СЕКЦИЯ DIGITS ЦИФРЫ И ФАКТЫ ---------------------------------------------------------------------------*/
 .digits {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 100px auto;
 }
 
 .section-title {
@@ -144,14 +223,12 @@
   font-size: 60px;
   font-weight: 600;
   color: #000000;
-  margin: 0;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   text-align: center;
 }
 
 .section-subtitle {
-  margin: 0;
+  margin: 0 auto;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -163,7 +240,6 @@
 .table {
   width: 1100px;
   margin: auto;
-  margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -193,6 +269,38 @@
   margin: 0;
   margin-top: 20px;
 }
+/* СЕКЦИЯ VIDEO ----------------------------------------------------------------------------------------*/
+.video {
+  margin-top: 100px;
+  margin-bottom: -50px;
+}
+
+.video__iframes {
+  display: flex;
+  flex-direction: row;
+  margin: 50px auto 0;
+  width: 1050px;
+  z-index: 2;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  border: none;
+}
+
+.video__iframe:first-child {
+  margin-right: 20px;
+}
+/* СЕКЦИЯ OAKLEY ----------------------------------------------------------------------------------------*/
+.oakley {
+  padding-top: 160px;
+  background-color: #f2f2f2;
+}
+
+
+
+
 /* СЕКЦИЯ ФЕЙНМАН ----------------------------------------------------------------------------------------*/
 .feynman {
   min-height: 890px;
@@ -240,6 +348,77 @@
   color: #2f80ed;
   text-decoration: none;
 }
+/* СЕКЦИЯ KHAN ----------------------------------------------------------------------------------------*/
+.khan {
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin: auto;
+  padding-top: 105px;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.khan__quote {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 790px;
+  margin-top: 50px;
+  margin-bottom: 36px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 68px;
+}
+
+.khan__book-container {
+  display: flex;
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  margin-right: 48px;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
 /* СЕКЦИЯ КАУФМАН ----------------------------------------------------------------------------------------*/
 .kaufman {
   margin: 0;
@@ -297,6 +476,25 @@
   top: 0;
   z-index: 0;
 }
+
+/* СЕКЦИЯ RESOURCES ---------------------------------------------------------------------------------------*/
+.resources {
+  margin: 100px auto 217px;
+}
+
+.resources__logo-zone {
+  width: 1100px;
+  margin: 80px auto 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+}
+
+
 /* СЕКЦИЯ FOOTER -----------------------------------------------------------------------------------------*/
 .footer {
   display: flex;
