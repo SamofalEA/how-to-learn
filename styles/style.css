@@ -209,6 +209,82 @@
   font-size: 18px;
   font-weight: normal;
 }
+/* СЕКЦИЯ VIDEO ----------------------------------------------------------------------------------------*/
+.video {
+  margin-top: 100px;
+  margin-bottom: -50px;
+}
+
+.video__iframes {
+  display: flex;
+  flex-direction: row;
+  margin: 50px auto 0;
+  width: 1050px;
+  z-index: 2;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  border: none;
+}
+
+.video__iframe:first-child {
+  margin-right: 20px;
+}
+
+/* СЕКЦИЯ OAKLEY ----------------------------------------------------------------------------------------*/
+.oakley {
+  padding-top: 160px;
+  background-color: #f2f2f2;
+}
+/* СЕКЦИЯ ФЕЙНМАН ----------------------------------------------------------------------------------------*/
+.feynman {
+  min-height: 890px;
+  background-color: #f2f2f2;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/feynman.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+}
+
+.feynman__title {
+  margin: 0;
+  margin-top: 100px;
+  width: 648px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  color: #000000;
+  z-index: 1;
+}
+
+.feynman__subtitle {
+  margin: 0;
+  margin-top: 70px;
+  z-index: 1;
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+}
 /* СЕКЦИЯ DIGITS ЦИФРЫ И ФАКТЫ ---------------------------------------------------------------------------*/
 .digits {
   display: flex;
@@ -268,85 +344,6 @@
   color: #000000;
   margin: 0;
   margin-top: 20px;
-}
-/* СЕКЦИЯ VIDEO ----------------------------------------------------------------------------------------*/
-.video {
-  margin-top: 100px;
-  margin-bottom: -50px;
-}
-
-.video__iframes {
-  display: flex;
-  flex-direction: row;
-  margin: 50px auto 0;
-  width: 1050px;
-  z-index: 2;
-}
-
-.video__iframe {
-  width: 515px;
-  height: 316px;
-  border: none;
-}
-
-.video__iframe:first-child {
-  margin-right: 20px;
-}
-/* СЕКЦИЯ OAKLEY ----------------------------------------------------------------------------------------*/
-.oakley {
-  padding-top: 160px;
-  background-color: #f2f2f2;
-}
-
-
-
-
-/* СЕКЦИЯ ФЕЙНМАН ----------------------------------------------------------------------------------------*/
-.feynman {
-  min-height: 890px;
-  background-color: #f2f2f2;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  background-image: url(../images/feynman.png);
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: 867px 637px;
-}
-
-.feynman__title {
-  margin: 0;
-  margin-top: 100px;
-  width: 648px;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: 600;
-  color: #000000;
-  z-index: 1;
-}
-
-.feynman__subtitle {
-  margin: 0;
-  margin-top: 70px;
-  z-index: 1;
-  text-align: center;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  color: #000000;
-}
-
-.feynman__link {
-  position: absolute;
-  top: 50%;
-  right: 48px;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  color: #2f80ed;
-  text-decoration: none;
 }
 /* СЕКЦИЯ KHAN ----------------------------------------------------------------------------------------*/
 .khan {
@@ -572,4 +569,4 @@
   height: 16px;
   width: 16px;
   padding-right: 10px;
-}
+} 
