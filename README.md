@@ -6,4 +6,5 @@
 * Iframe  
 * Файловая структура по БЭМ Nested  
 * CSS animation  
-* Стилизация классов в CSS по БЭМ
+* Стилизация классов в CSS по БЭМ  
+## GitHub Pages: https://samofalea.github.io/how-to-learn/
